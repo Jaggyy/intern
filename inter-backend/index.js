@@ -9,7 +9,7 @@ const dotenv = require("dotenv")
 app.use(cors());
 app.options('*', cors());
 
-mongoose.connect("mongodb+srv://jaggy:try1more@cluster0.jsydc.mongodb.net/test?retryWrites=true&w=majority", {
+mongoose.connect("mongodb", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
